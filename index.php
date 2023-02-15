@@ -17,3 +17,45 @@
 
 </head>
 <body>
+<?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message" data-aos="zoom-out">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+
+?>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+   <a href="#home" class="logo">Portfolio</a>
+
+   <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="#contact">contact</a>
+   </nav>
+
+   <div class="follow">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-github"></a>
+   </div>
+
+</header>
+
+<!-- header section ends -->
